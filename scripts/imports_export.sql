@@ -1,4 +1,4 @@
-// import data
+/* import data */
 
 MySQL [bd_merqueo]> load data local infile 'C:/Users/57301/Escritorio/import_barrios.txt'
     -> into table barrio fields terminated by '.' lines terminated by '\r\n'
@@ -17,7 +17,8 @@ MySQL [bd_merqueo]> select * from barrio;
 +-----------+---------------------+--------------+
 3 rows in set (0.002 sec)
 
-// export data
+
+/* export data */
 
 MySQL [bd_merqueo]> select * from barrio;
 +-----------+---------------------+--------------+

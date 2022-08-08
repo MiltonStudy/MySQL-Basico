@@ -14,6 +14,7 @@ delimiter ;
 select FC_cantidad_proveedor("Diego", "Lopez");
 drop function FC_cantidad_proveedor;
 
+
 /* Ejercicio 6*/
 delimiter $$
 create function FC_localidad_usuarios(p_localidad varchar(40))
@@ -30,6 +31,7 @@ delimiter ;
 select FC_localidad_usuarios("Kennedy");
 drop function FC_localidad_usuarios;
 
+
 /* Ejercicio 7*/
 delimiter $$
 create function FC_categoria_articulos(p_categoria varchar(30))
@@ -45,13 +47,3 @@ delimiter ;
 
 select FC_categoria_articulos("Bebidas");
 drop function FC_categoria_articulos;
-
-
-
-
-
-
-
-
-
-

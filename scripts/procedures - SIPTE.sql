@@ -10,6 +10,7 @@ call pc_add_ent('2020-12-09', 100, 2000, 1, 1);
 drop procedure if exists pc_add_ent;
 select * from entradas;
 
+
 /* */
 delimiter $$
 create procedure pc_edit_ent(p_id_entrada int, p_fecha_ent varchar(30), p_cantidad int, p_precio_unt int, p_inventario int, p_insumo int)
@@ -30,6 +31,7 @@ call pc_edit_ent(59, '2020-12-09', 5, 200, 1, 2);
 drop procedure if exists pc_edit_ent;
 select * from entradas;
 
+
 /* */
 delimiter $$
 create procedure pc_add_sld(p_fecha_sld varchar(30), p_cantidad int, p_inventario int, p_insumo int)
@@ -41,6 +43,7 @@ delimiter ;
 
 call pc_add_sld("2020-12-03", 5, 1, 4);
 drop procedure if exists pc_add_sld;
+
 
 /* */
 delimiter $$
@@ -59,6 +62,7 @@ delimiter ;
 call pc_edit_sld(12, "2020-08-03", 10, 1, 4);
 drop procedure if exists pc_edit_sld;
 
+
 /* */
 delimiter $$
 create procedure pc_eliminar_pd(p_pedido int)
@@ -69,6 +73,7 @@ end $$
 delimiter ;
 
 call pc_eliminar_pd(9);
+
 
 /* */
 delimiter $$

@@ -21,8 +21,8 @@ end $$
 delimiter ;
 call pa_case(1);
 
-/* Ejercicio 3*/
 
+/* Ejercicio 3*/
 delimiter $$
 create procedure pa_cat_case(p_categoria varchar(30))
 begin
@@ -39,8 +39,8 @@ delimiter ;
 drop procedure if exists pa_cat_case;
 call pa_cat_case("Bebidas");
 
-/* Ejercicio 4*/
 
+/* Ejercicio 4*/
 delimiter $$
 create procedure pa_vantasCat_case(p_categoria varchar(30))
 begin
@@ -59,7 +59,6 @@ call pa_vantasCat_case("Bebidas");
 
 
 /* Ejercicio 5*/
-
 delimiter $$
 create procedure pa_edad_prov_case(p_edad int)
 begin
@@ -77,8 +76,8 @@ delimiter ;
 call pa_edad_prov_case(30);
 drop procedure if exists pa_edad_prov_case;
 
-/* Ejercicio 6*/
 
+/* Ejercicio 6*/
 delimiter $$
 create procedure pa_totalPro_case(p_proveedor int)
 begin
